@@ -1,0 +1,45 @@
+
+:root{
+  --bg:#0b1320;
+  --accent:#0f766e;
+  --text:#0e1b2c;
+  --muted:#5b708b;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:#f6f9fc}
+a{color:var(--accent);text-decoration:none}
+.container{max-width:1100px;margin:auto;padding:0 1rem}
+.site-header{background:#ffffff;border-bottom:1px solid #e6ecf5;position:sticky;top:0;z-index:50}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;gap:.5rem;align-items:center;font-weight:700;color:var(--text)}
+.logo{width:28px;height:28px}
+.nav a{margin-left:1rem}
+.btn{display:inline-block;padding:.6rem 1rem;border:1px solid #cdd6e1;border-radius:.75rem}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-ghost{background:transparent}
+.hero{background:linear-gradient(135deg,#e6fff9,#eaf3ff);padding:4rem 0;margin-top:0}
+.hero-content{max-width:800px}
+.hero h1{font-size:2.2rem;margin:0 0 .5rem 0}
+.hero p{font-size:1.1rem;color:var(--muted)}
+.cta{margin-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:2rem 0}
+.card{background:var(--card);border:1px solid #e6ecf5;border-radius:1rem;padding:1rem;box-shadow:0 6px 18px rgba(16,24,40,.04)}
+.proof{margin:2rem 0}
+.bullets{list-style:disc;padding-left:1.5rem;color:var(--muted)}
+.page-header{margin:2rem 0 1rem}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-bottom:2rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:1rem 0 2rem}
+.contact-form{background:#fff;border:1px solid #e6ecf5;border-radius:1rem;padding:1rem;display:grid;gap:.75rem}
+.contact-form label{display:grid;gap:.25rem;font-weight:600}
+.contact-form input,.contact-form textarea{padding:.6rem;border:1px solid #cdd6e1;border-radius:.5rem;font:inherit}
+.faq details{background:#fff;border:1px solid #e6ecf5;border-radius:.75rem;padding:.5rem .75rem;margin-top:.5rem}
+.site-footer{border-top:1px solid #e6ecf5;background:#fff;margin-top:3rem}
+.footer-inner{padding:1rem 0;color:var(--muted)}
+.small{font-size:.9rem;color:var(--muted)}
+@media (prefers-color-scheme: dark){
+  html,body{background:#0b1020;color:#e5ecf6}
+  .site-header,.site-footer,.card,.contact-form,.faq details{background:#0f1428;border-color:#1e2a44}
+  .nav a,.brand,.hero p,.bullets,.footer-inner,.small{color:#b2c0db}
+  .hero{background:linear-gradient(135deg,#0a2533,#121a2e)}
+}
